@@ -1,5 +1,71 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pride Cows</title>
+	<link rel="stylesheet" href="slick-theme.css">
+	<link rel="stylesheet" href="slick.css">
+
+	<style>
+		*{margin: 0; padding: 0;margin-bottom: -2px;}
+		.wrapper {max-width: 1440px;margin: 0 auto; width: 100%;  }
+		img {max-width: 100%; }
+		.section2 {overflow: hidden;}
+		.slick-dotted.slick-slider { margin-bottom: 0px;}
+		.slick-dots {bottom:50px;}
+		.slick-dots li {width: 10px;height: 10px; }
+		.slick-dots li button:before {font-size: 12px;}
+		.slick-dots li.slick-active button:before {color: #fff;}
+	</style>
+</head>
 <body>
-<p>Test</p>
+
+	<section class="wrapper">
+		<div class="section1">
+			<img src="1.jpg" alt="">
+			<img src="1a.jpg" alt="">
+		</div>
+		<div class="section2">
+			<img src="ghee.jpg" alt="">
+			<img src="milk.jpg" alt="">
+			<img src="curd.jpg" alt="">
+		</div>
+		<div class="section3">
+			<img src="3.jpg" alt="">
+			<img src="3a.jpg" alt="">
+		</div>
+		<div class="section4">
+			<img src="4.jpg" alt="">
+		</div>
+		<div class="section5">
+			<img src="5.jpg" alt="">
+		</div>
+	</section>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="slick.js"></script>
+	<script>
+		$('.section2').slick({
+			dots: true,
+			infinite: true,
+  			speed: 300,
+  			autoplay: true,
+  			autoplaySpeed: 2000
+		});
+		$('.section1').slick({
+			dots: false,
+			infinite: false,
+  			speed: 300,
+  			arrows: true
+		});
+		$('.section3').slick({
+			dots: false,
+			infinite: false,
+  			speed: 300,
+  			arrows: true
+		});
+	</script>
 </body>
 </html>
